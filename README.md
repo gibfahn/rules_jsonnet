@@ -33,13 +33,13 @@ load("@io_bazel_rules_jsonnet//jsonnet:jsonnet.bzl", "jsonnet_repositories")
 
 jsonnet_repositories()
 
-load("@jsonnet_go//bazel:repositories.bzl", "jsonnet_go_repositories")
+load("@go_jsonnet//bazel:repositories.bzl", "go_jsonnet_repositories")
 
-jsonnet_go_repositories()
+go_jsonnet_repositories()
 
-load("@jsonnet_go//bazel:deps.bzl", "jsonnet_go_dependencies")
+load("@go_jsonnet//bazel:deps.bzl", "go_jsonnet_dependencies")
 
-jsonnet_go_dependencies()
+go_jsonnet_dependencies()
 ```
 
 ## Jsonnet Port Selection

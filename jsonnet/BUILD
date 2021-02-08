@@ -26,7 +26,7 @@ config_setting(
 alias(
     name = "jsonnet_tool",
     actual = select({
-        "//jsonnet:port_cpp": "@jsonnet//cmd:jsonnet",
-        "//conditions:default": "@jsonnet_go//cmd/jsonnet",
+        "//jsonnet:port_cpp": "@cpp_jsonnet//cmd:jsonnet",
+        "//conditions:default": "@go_jsonnet//cmd/jsonnet",
     }),
 )

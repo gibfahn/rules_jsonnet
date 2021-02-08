@@ -800,7 +800,7 @@ Example:
 def jsonnet_repositories():
     """Adds the external dependencies needed for the Jsonnet rules."""
     http_archive(
-        name = "jsonnet",
+        name = "cpp_jsonnet",
         sha256 = "076b52edf888c01097010ad4299e3b2e7a72b60a41abbc65af364af1ed3c8dbe",
         strip_prefix = "jsonnet-0.17.0",
         urls = [
@@ -808,7 +808,7 @@ def jsonnet_repositories():
         ],
     )
     git_repository(
-        name = "jsonnet_go",
+        name = "go_jsonnet",
         remote = "https://github.com/google/go-jsonnet",
         commit = "0d1d4cb81244b9466c4c93f790acca01d260245e",  # v0.17.0
         shallow_since = "1606056352 +0100",
